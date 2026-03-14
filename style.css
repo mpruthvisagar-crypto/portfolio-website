@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f0f1b, #000);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.logo span {
+  color: cyan;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: cyan;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.profile-img {
+  width: 500px; /* Bigger size */
+  height: 450px; /* Make perfect circle */
+  border-radius: 50%;
+  border: 4px solid cyan;
+  box-shadow: 0 0 30px cyan;
+
+  object-fit: cover; /* Crops image properly */
+  object-position: center; /* Focus center */
+
+  transform: scale(1.2); /* Zoom effect */
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Sections */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1c1c30;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px cyan;
+}
+
+.card a {
+  color: cyan;
+  text-decoration: none;
+}
+
+/* Tags */
+.tags span {
+  background: cyan;
+  color: black;
+  padding: 8px 15px;
+  margin: 8px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.platform-card {
+  background: #1c1c30;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.platform-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px cyan;
+}
+
+.platform-card img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.platform-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* makes it responsive */
+  margin-top: 40px;
+}
+
+.project-container {
+  background: #1c1c30;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.project-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px cyan;
+}
+
+.project-container a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 18px;
+  background: cyan;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project-container a:hover {
+  background: white;
+}
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.edu-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+}
+
+.edu-card h3 {
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  font-size: 14px;
+  color: #cbd5e1;
+}

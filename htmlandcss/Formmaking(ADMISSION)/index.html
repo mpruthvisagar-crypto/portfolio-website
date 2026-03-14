@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>                                                 
+    <form>
+        <h2>Student Admission Form</h2>
+    <fieldset>
+            <!-- <legend>Personal Details</legend>    -->
+
+            <label >Full Name</label>
+            <input type="text" autofocus placeholder="Enter full name" required>
+
+            <label >Email</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label >Password</label>
+            <input type="password" placeholder="Enter password"  required>
+
+            <label >Phone Number</label>
+            <input type="tel" placeholder="Enter phone number" pattern="[0-9]{10}" required>
+
+            <label >Date of Birth</label>
+            <input type="date">
+
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age" min="17" max=">60" required><br>
+        </fieldset>
+        <fieldset>
+
+            <legend>Acedemic Details</legend>
+
+            <label>Course</label>
+            <select>
+                <option value="">Select a course</option>
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>MBA</option>
+                <option>M.Tech</option>
+            </select>
+
+            <label>Branch</label>
+            <input type="text" list="branch">
+            <datalist id="branch">
+                <option>CSE</option>
+                <option>AIDS</option>
+                <option>ECE</option>
+                <option>Arts & Science</option>
+        </datalist>
+
+        <label>Percentage</label>
+        <input type="range" min="40" max="99">
+           </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label>Gender</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br>
+
+            <label>Languages</label>
+            <input type="checkbox"> English
+            <input type="checkbox"> Hindi
+            <input type="checkbox"> Telugu
+
+
+        <label>Upload Photo</label>
+          <input type="file">
+
+          <label>Comments</label>
+          <textarea rows="4" placeholder="Enter your comments here..."></textarea>
+          
+        </fieldset>
+
+        <button>Submit</button>
+        <button>Cancel</button>
+    </form>
+</body>
+</html>

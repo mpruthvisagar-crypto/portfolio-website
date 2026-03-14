@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toss Game</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, red, green, blue, yellow);
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+        img{
+            background: transparent;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        button{
+            height: 35px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Simple Toss Game</h2>
+        <img src="rupee.jpg" alt="coin">
+        <br><br>
+
+        <button id="headsBtn">Heads</button>
+        <button id="tailsBtn">Tails</button>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        const headsBtn = document.getElementById("headsBtn");
+        const tailsBtn = document.getElementById("tailsBtn");
+        const resultText = document.getElementById("result");
+
+        function toss(choice) {
+            const tossResult = Math.random() < 0.5 ? "Heads" : "Tails";
+
+            if (choice === tossResult) {
+                resultText.textContent = "You Won! It was " + tossResult;
+            } else {
+                resultText.textContent = "You Lost! It was " + tossResult;
+            }
+        }
+
+        headsBtn.addEventListener("click", () => toss("Heads"));
+        tailsBtn.addEventListener("click", () => toss("Tails"));
+    </script>
+
+</body>
+</html>

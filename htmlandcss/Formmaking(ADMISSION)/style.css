@@ -1,0 +1,38 @@
+form{
+margin:auto;
+width:600px;
+background-color: bisque;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 25px purple;
+}
+h2{
+    text-align: center;
+    color: #0f58a1;
+}
+body{
+    font-family: Roboto;
+    background-color: hsl(221 33% 75%);
+
+}
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin:5px;
+}  
+ label{
+    font-weight: bold;
+ }
+ button{
+    background-color: rgb(224, 115, 13);
+    color:rgb(237, 234, 234);
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    width:150px;
+    font-size:20px;
+
+ }
+button:hover{
+    background-color: rgb(66, 23, 207);
+}

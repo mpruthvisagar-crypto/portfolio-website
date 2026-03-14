@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(rgb(83, 158, 83));
+            background-size:cover;
+            text-align:center;
+            height:100vh;
+            font-size: 35px;
+            color:rgb(9, 216, 182);
+        }
+        label{
+            font-size:50px;
+
+        }
+        button{
+            font-size: 30px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: rgb(9, 216, 182);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+
+        }
+        button:hover{
+            transform:scale(1.2);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: rgb(42, 69, 143);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Counter</h1>
+        <label id="counter">0</label><br>
+        <button id="increment">+</button>
+        <button id="clear">clear</button>
+         <button id="decrement">-</button>
+    </div>
+    <h4 id="message"></h4>
+    <script>
+        const labelvalue=document.getElementById("counter");
+        const incrementbtn=document.getElementById("increment");
+        const clearbtn=document.getElementById("clear");
+        const decrementbtn=document.getElementById("decrement");
+        const message=document.getElementById("message");
+        let count=0;
+    incrementbtn.onclick=function(){
+        count++;
+        labelvalue.textContent=count;
+        message.textContent="Counter incrementation!";
+    }
+    clearbtn.onclick=function(){
+        count=0;
+        labelvalue.textContent=count;
+        message.textContent="Counter cleared!";
+    }
+    decrementbtn.onclick=function(){
+    count--;
+    labelvalue.textContent=count;
+    message.textContent="Counter decremented!";
+}    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(to bottom, #007bff, #ffffff);
+            text-align:center;
+            height:100vh;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight:bold;
+            color:#ffffff
+        }
+        label{
+            padding:7px;
+            font-size:20px;
+        }
+        input{
+            padding:5px;
+            width:200px
+            
+        }
+        .btn{
+            margin-top:20px;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        button{
+            padding:10px 20px;
+            margin:0 10px;
+            font-size:16px;
+            cursor:pointer;
+            border:none;
+            border-radius:5px;
+            background-color:#007bff;
+            color:#ffffff;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            transform: translateY(-2px);
+            background-color:#0056b3;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <div class="page">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        </div>
+        <div class="btn">
+            <button id="loginButton">Login</button>
+            <button id ="cancelButton">Cancel</button>
+        </div>
+        <h4 id="result"></h4>
+        <script>
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const loginButton = document.getElementById('loginButton');
+            const result = document.getElementById('result');
+            const cancelButton = document.getElementById('cancelButton');
+            let user1="cricket";
+            let pass1="cricket123";
+            
+            loginButton.onclick=function(){
+                let userinput = usernameInput.value;
+                let passinput = passwordInput.value;
+                if(userinput === "" || passinput === ""){
+                    result.textContent="Please enter both username and password.";
+                    result.style.color="red";
+                    return;
+                }
+                if(userinput === user1 && passinput ===pass1){
+                    result.textContent="Login successfull!";
+                    result.style.color="green";
+                }
+                else{
+                    result.textContent="Login failed! Please try again.";
+                    result.style.color="red";
+                }
+            }
+            cancelButton.onclick=function(){
+            alert("Login cancelled!");
+            }
+        </script>
+</body>
+</html>

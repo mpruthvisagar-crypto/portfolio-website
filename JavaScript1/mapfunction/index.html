@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let list = [12,20,30];
+    let result = list.map((num) => 
+    {
+        return num+10
+    });
+    console.log(result);
+    let list1  = [1,2,3,4,5];
+    let double = list1.map((num) => num*2);
+    console.log(double);
+    let products = [
+        {name:"pen", price:10},
+        {name:"book", price:120},
+        {name:"bag", price:500}
+    ];
+    let prices = products.map((product) => product.price);
+    console.log(prices);
+
+    let marks = [35,45,56,78];
+    let gmarks = marks.map((mark)=> mark+5);
+    console.log(gmarks);
+
+    let pnames = products.map((item) =>item.name.toUpperCase());
+    console.log(pnames);
+    let names = ["xxx","yyy","zzz"];
+    let nnames = names.map((n) => n.toUpperCase());
+    //filter method
+    let nums = [1,2, 3,4,5,6,7,8,9,10];
+    let even = nums.filter((n) => n%2 === 0);
+    console.log(even);
+    let big = [23,56,34,78,12,89,46];
+    let big1 = big.filter(n => n>30);
+    console.log(big1);
+    
+    let prod = products.filter((p) => p.price>100).map(p=>p.name);
+    console.log(prod); 
+    //sum of array elements using reduce
+    let arr = [12,34,56];
+    let sum = arr.reduce((num,sum) => sum+num,0) ;
+    console.log(sum); 
+    //finding maximum using reduce
+    let max = arr.reduce((num,max) =>
+    num>max?num:max ,arr[0]);
+    console.log(max);
+    </script>
+</body>
+</html>

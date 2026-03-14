@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main" class="heading">this is main Heading</h1>
+    <script>
+       class student{
+        constructor(name,id){
+            this.name = name;
+            this.id = id;
+        }
+        greet(){
+            console.log("Name : "+ this.name +" id: "+this.id);
+        }
+    }  
+    class exam extends student
+    {
+        constructor(name,id,sub1)
+        {
+            super(name,id);
+            this.sub1 = sub1;
+        }
+        display()
+        {
+            super.greet();
+            console.log("sub1 = " +this.sub1);
+        }
+    }
+    let E = new exam("klh",8915,"FWD");
+    E.display();
+    </script>
+</body>
+</html>

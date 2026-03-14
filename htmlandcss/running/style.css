@@ -1,0 +1,15 @@
+
+.background {
+    
+    background-color: hsl(0, 0%, 50%);
+}
+.table {
+    background-color: rgb(243, 240, 240);
+    text-align: center;
+    width:660px;
+    padding: 20px;
+    margin-left:300px;
+}
+.img {
+    margin-left:300px;
+}

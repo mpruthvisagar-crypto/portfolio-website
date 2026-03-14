@@ -1,0 +1,46 @@
+form{
+margin:auto;
+width:600px;
+background-color: rgb(250, 249, 247);
+padding:25px;
+border-radius:25px;
+}
+h2{
+    text-align: center;
+    color: #084e95;
+}
+body{
+    font-family: Roboto;
+    background-color: hsl(221 33% 75%);
+
+}
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin:5px;
+}  
+ label{
+    font-weight: bold;
+ }
+ button{
+    background-color: rgb(62, 13, 224);
+    color:rgb(237, 234, 234);
+    padding:10px;
+    margin:10px auto;
+    border-radius:10px;
+    width:150px;
+    font-size:20px;
+    
+
+ }
+button:hover{
+    background-color: rgb(71, 162, 241);
+}
+    input[type=radio],
+        input[type=checkbox] {
+            width: auto;
+        } 
+textarea{
+    padding:25px;
+}
+

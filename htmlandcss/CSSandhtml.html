@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML & CSS Projects</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0f2027;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background-color: #111;
+    color: #00d4ff;
+    padding: 15px;
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: #00d4ff;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+/* LINK */
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* VIEW BUTTON (ADDED) */
+.view-btn{
+    margin-top:10px;
+    padding:8px 14px;
+    border:none;
+    border-radius:8px;
+    background:#00d4ff;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.view-btn:hover{
+    background:#00a8cc;
+    color:#fff;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>HTML AND CSS PROJECTS</h1>
+
+<div class="container">
+
+    <div class="card">
+        <a href="timetable.html">
+            <img src="timetable.png">
+        </a>
+        <div class="card-content">
+            <h3>Time Table</h3>
+            <p>Schedule layout design</p>
+            <button class="view-btn" onclick="window.open('timetable.html')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="temperatureandweights.html">
+            <img src="tempandwei.png">
+        </a>
+        <div class="card-content">
+            <h3>Temperature & Weights</h3>
+            <p>Conversion project</p>
+            <button class="view-btn" onclick="window.open('temperatureandweights.html')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="studenttable.html">
+            <img src="studentbio.png">
+        </a>
+        <div class="card-content">
+            <h3>Student Table</h3>
+            <p>Data table design</p>
+            <button class="view-btn" onclick="window.open('studenttable.html')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="running/">
+            <img src="running.jpg">
+        </a>
+        <div class="card-content">
+            <h3>Running</h3>
+            <p>Animation project</p>
+            <button class="view-btn" onclick="window.open('running/')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="Passport Application Form/">
+            <img src="passport.jpg">
+        </a>
+        <div class="card-content">
+            <h3>Passport Form</h3>
+            <p>Form design UI</p>
+            <button class="view-btn" onclick="window.open('Passport Application Form/')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="nav-project/">
+            <img src="NAVATAG.png">
+        </a>
+        <div class="card-content">
+            <h3>Navigation Project</h3>
+            <p>Navbar design</p>
+            <button class="view-btn" onclick="window.open('nav-project/')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="Myfirstpage/">
+            <img src="html.png">
+        </a>                                                                                                                                                                                                                                                                                                    
+        <div class="card-content">
+            <h3>HTML Demo</h3>
+            <p> Hypertext Markup Language</p>
+            <button class="view-btn" onclick="window.open('Myfirstpage/')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="My Website/">
+            <img src="website.jpg">
+        </a>
+        <div class="card-content">
+            <h3>My Website</h3>
+            <p>Complete website layout</p>
+            <button class="view-btn" onclick="window.open('My Website/')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="Media tags/">
+            <img src="mediatag.png">
+        </a>
+        <div class="card-content">
+            <h3>Media Tags</h3>
+            <p>Audio & video tags</p>
+            <button class="view-btn" onclick="window.open('Media tags/')">View Project</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="Media queries/">
+            <img src="query.jpg">
+        </a>
+        <div class="card-content">
+            <h3>Media Queries</h3>
+            <p>Responsive design</p>
+            <button class="view-btn" onclick="window.open('Media queries/')">View Project</button>
+        </div>
+    </div>
+     <div class="card">
+        <a href="Listlinkimage/">
+            <img src="imagelink.jpg">
+        </a>
+        <div class="card-content">
+            <h3>Bootstrap</h3>
+            <p>Framework usage</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div>
+ <div class="card">
+        <a href="Klh/">
+            <img src="klh.png">
+        </a>
+        <div class="card-content">
+            <h3>Kl University</h3>
+            <p>Kl University template</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div> <div class="card">
+        <a href="Formmaking(ADMISSION)/">
+            <img src="studentform.png">
+        </a>
+        <div class="card-content">
+            <h3>Student Admission Form</h3>
+            <p> Admission Form</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div>
+     <div class="card">
+        <a href="food-order page/">
+            <img src="foodorder.png">
+        </a>
+        <div class="card-content">
+            <h3>Food Order Page</h3>
+            <p>Food Order template</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div>
+     <div class="card">
+        <a href="ELP Mart inner page/">
+            <img src="Elp.jpg">
+        </a>
+        <div class="card-content">
+            <h3>ELP Mart</h3>
+            <p>Home Cleaning Essentialy</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div>
+     <div class="card">
+        <a href="CSSDEMO/">
+            <img src="css.jpg">
+        </a>
+        <div class="card-content">
+            <h3>CSS DEMO</h3>
+            <p>Cascading Style Sheets Demo</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div>
+
+     <div class="card">
+        <a href="Bootstrap/">
+            <img src="bootstrap.jpg">
+        </a>
+        <div class="card-content">
+            <h3>Bootstrap</h3>
+            <p>Framework usage</p>
+            <button class="view-btn" onclick="window.open('Bootstrap/')">View Project</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to left, #667eea, #764ba2);
+        text-align: center;    
+        color: white;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .card{
+        width: 260px;
+        background: linear-gradient(to right, yellow, #01651c);
+        border-radius: 25px;
+        padding: 20px;
+        border: 5px solid skyblue;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover{
+        transform: translate(5px, -5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+     @keyframes slideIn{
+        from{
+            transform: translateX(-100px);
+            opacity: 10%;
+        }
+        to{
+            transform: translateX(0);
+        }
+
+    }
+    
+    .slide-card{
+        animation: slideIn 2s ease infinite;
+    }
+    .slide-card1{
+        animation: bounce 2s ease infinite;
+    }
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(10px);
+            
+        }
+        50% {
+            transform: translateY(-17px);
+        }
+    }
+
+   
+    @keyframes colorChange {
+    from { background: red; }
+    to { background: blue; }
+    }
+    .slide-card2{
+        animation: rotate 3s ease infinite;
+    }
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360000000000deg); }
+    }
+    .slide-card3{
+        animation: pulse 2s ease infinite;
+    }
+    @keyframes pulse {
+        0%{
+            transform: scale(1);
+            opacity: 10%;
+        } 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+    
+    h1{
+        transition: all 0.10s ease;
+        animation: colorChange 0.3s ease infinite;
+    }
+
+    h1:hover{
+        color: #999;
+        transform: translateY(-10px); 
+        box-shadow: red 0px 5px 15px 8px;
+    }
+    button{
+        transition: all 0.3s ease;
+    }
+    button:hover{
+        background-color:black;
+        color:white;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+</style>
+<body>
+<h1>
+    Animation Examples
+</h1>
+<div class="main">
+    <div class = "card slide-card">
+        <h2>slide card</h2>
+        <button>Click Me</button>
+    </div>
+    <div class = "card slide-card1">
+        <h2>bounce card</h2>
+        <button>Click Me</button>
+    </div>
+     <div class = "card slide-card2">
+        <h2>rotate card</h2>
+        <button>Click Me</button>
+    </div>
+       <div class = "card slide-card3">
+        <h2>pulse card</h2>
+        <button>Click Me</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let list = [1, 2, 3, 4, 5];
+    let result = list.map((num) => {
+        return num + 10;
+    });
+    console.log(result);
+    let list1 = [1, 2, 3, 4, 5];
+    let double = list1.map((num) => num * 2);
+    console.log(double);
+    let product = [
+        {name: "pen", price:500},
+        {name: "pencil", price:5},
+        {name: "eraser", price:3}
+    ];
+    let prices = product.map((product) => product.price);
+    console.log(prices);
+    let marks = [70,69,55,66,80];
+    let tmarks = marks.map((marks) => marks + 5);
+    console.log(tmarks);
+    let name = product.map((product) => product.name);
+    console.log(name);
+    let upname = name.map((name) => name.toUpperCase());
+    console.log(upname);
+    let names = ["aaa","bbb","ccc"];
+    let upnames = names.map((name) => name.toUpperCase());
+    console.log(upnames);
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let even = numbers.filter((num) => num%2 === 0);
+    console.log(even);
+    let odd = numbers.filter((num) => num%2 !== 0);
+    console.log(odd);
+    let big = [23,56,34,78,12,89,46];
+    let b = big.filter((num) => num > 30);
+    console.log(b);
+    let pname = product.filter((n) => n.price > 10).map((n) => n.name);
+    console.log(pname);
+    
+    // reduce method
+    let arr = [1, 2, 3, 4, 5];
+    let sum = arr.reduce((num, total) => total + num, 0);
+    console.log(sum);
+    // finding max numbers
+    let max = arr.reduce((a, b) => Math.max(a, b));
+    console.log(max);
+
+</script>
+</html>

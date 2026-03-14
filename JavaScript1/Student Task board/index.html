@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Task Board</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, rgb(73, 73, 227), rgb(23, 166, 222), rgb(227, 227, 30));
+            text-align: center;
+        }
+
+        .taskCard {
+            display: flex;
+            flex-wrap: wrap;
+            background: linear-gradient(to bottom, rgb(160, 235, 160), rgb(190, 227, 190));
+            padding: 10px;
+            margin: 10px auto;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px gray;
+        }
+
+        .deleteBtn {
+            background-color: rgb(146, 146, 228);
+            color: white;
+            margin-left: auto;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Task Board</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button id="addBtn">Add Task</button>
+
+    <div id="taskContainer"></div>
+
+<script>
+const taskInput = document.getElementById("taskInput");
+const addBtn = document.getElementById("addBtn");
+const taskContainer = document.getElementById("taskContainer");
+
+let count = 0; // declare counter
+
+addBtn.addEventListener("click", function() {
+
+    let taskText = taskInput.value.trim(); // trim spaces
+
+    if(taskText === "") {
+        alert("Please enter a task");
+        return;
+    }
+
+    count++;
+
+    let taskDiv = document.createElement("div");
+    taskDiv.classList.add("taskCard");
+    taskDiv.id = "task" + count;
+    taskDiv.textContent = taskText;
+
+    // Create delete button inside the click event
+    let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.classList.add("deleteBtn");
+
+    // Delete functionality
+    deleteBtn.addEventListener("click", function() {
+        taskDiv.remove();
+    });
+
+    taskDiv.appendChild(deleteBtn);
+    taskContainer.appendChild(taskDiv);
+
+    taskInput.value = ""; // clear input
+});
+deleteBtn.addEventListener("click" , function(){
+    taskDiv.remove();
+});
+</script>
+
+</body>
+</html>

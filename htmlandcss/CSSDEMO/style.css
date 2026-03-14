@@ -1,0 +1,22 @@
+
+.background{
+    background-color:#0f0f0f;
+    background-image:url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.container{
+    text-align:center;
+    color:white;
+    font-family:Roboto;
+    font-size:40px;
+}
+.table{
+  background-color:rgba(48, 237, 70, 0.934);
+    padding:20px;
+    margin:5px;
+    display:inline-block;
+    border-radius:15px;
+    font-size:20px;
+}
+

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pruthvi Sagar | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <h2 class="logo">Pruthvi<span>Sagar</span></h2>
+      <ul>
+        <li><a onclick="showSection('about')">About</a></li>
+        <li><a onclick="showSection('projects')">Projects</a></li>
+        <li><a onclick="showSection('websites')">Websites</a></li>
+        <li><a onclick="showSection('platforms')">Platforms</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <img src="images/4.jpg" class="profile-img" alt="Profile Picture" />
+        <h1>Hello, I'm <span>M Pruthvi Sagar</span></h1>
+        <p>Web Developer | Tech Enthusiast</p>
+      </div>
+    </header>
+
+    <section id="about" class="section hidden">
+      <h2>About Me</h2>
+
+      <p>
+        Hello! I’m M Pruthvi Sagar, a passionate and hardworking learner with a
+        strong interest in technology and web development. I enjoy creating
+        websites and continuously improving my skills through practice and real
+        projects. I believe in consistency, self-discipline, and lifelong
+        learning. My goal is to grow as a professional developer and contribute
+        to meaningful projects in the future.
+      </p>
+
+      <!-- Education Containers -->
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>10th Class</h3>
+          <p><strong>School:</strong> pallavi internatinal school</p>
+          <p><strong>Board:</strong> CBSE</p>
+          <p><strong>Year:</strong> 2023</p>
+          <p><strong>Percentage:</strong> 85%</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Intermediate</h3>
+          <p><strong>College:</strong> Sri chaintanya Junior College</p>
+          <p><strong>Stream:</strong> MPC</p>
+          <p><strong>Year:</strong> 2023 - 2025</p>
+          <p><strong>Percentage:</strong> 92%</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>B.Tech</h3>
+          <p><strong>University:</strong> KL University</p>
+          <p><strong>Branch:</strong> Computer Science</p>
+          <p><strong>Year:</strong> 2025 - 2029</p>
+          <p><strong>Status:</strong> studying</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section hidden">
+      <h2>My Projects</h2>
+
+      <!-- Project Categories -->
+      <div class="card" onclick="showProjectList()">
+        <h3>View My HTML & CSS Projects</h3>
+        <a href="htmlandcss/CSSandhtml.html" target="_blank"
+          >Open Project Folder</a
+        >
+      </div>
+      <div class="card" onclick="showJavaScriptProjects()">
+        <h3>View My JavaScript Projects</h3>
+        <a href="JavaScript1/javascript.html" target="_blank"
+          >Open Project Folder</a
+        >
+      </div>
+
+      <div class="project-grid">
+        <div class="project-container">
+          <h3>Classroom Files</h3>
+          <p>Collection of my classroom HTML & CSS practice projects.</p>
+          <a href="FWD-ClassWork/" target="_blank">Open Project</a>
+        </div>
+
+        <div class="project-container">
+          <h3>Tourist Website</h3>
+          <p>Tourist places website using HTML and CSS.</p>
+          <a href="project_tourist/index.html" target="_blank">Open Project</a>
+        </div>
+      </div>
+    </section>
+    <section id="websites" class="section hidden">
+      <h2>My Websites</h2>
+      <p>Here are the websites I have built.</p>
+
+      <div class="project-grid">
+        <div class="project-container">
+          <h3>Tourist Website</h3>
+          <p>Responsive tourist places website.</p>
+          <a href="project(tourist)/tourist.html" target="_blank"
+            >Open Website</a
+          >
+        </div>
+
+        <div class="project-container">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio built using HTML & CSS.</p>
+          <a href="../portfolio/index.html" target="_blank">Open Website</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="platforms" class="section hidden">
+      <h2>My Learning Platforms</h2>
+      <div class="platform-grid">
+        <a href="https://pixabay.com/" target="_blank" class="platform-card">
+          <img src="images/pixabay.jpg" />
+          <h3>Pixabay</h3>
+        </a>
+
+        <a
+          href="https://www.w3schools.com/"
+          target="_blank"
+          class="platform-card"
+        >
+          <img src="images/w3.jpg" />
+          <h3>W3Schools</h3>
+        </a>
+
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          class="platform-card"
+        >
+          <img src="images/youtube.jpg" />
+          <h3>YouTube</h3>
+        </a>
+        <a
+          href="https://getbootstrap.com/"
+          target="_blank"
+          class="platform-card"
+        >
+          <img src="images/bootstrap.jpg" />
+          <h3>Bootstrap</h3>
+        </a>
+        <a
+          href="https://www.codechef.com/users/mpruthvi_3_248/edit"
+          target="_blank"
+          class="platform-card"
+        >
+          <img src="images/codechef.png" />
+          <h3>CodeChef</h3>
+        </a>
+        <a
+          href="https://github.com/mpruthvi3248"
+          target="_blank"
+          class="platform-card"
+        >
+          <img src="images/git.jpg" />
+          <h3>GitHub</h3>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section hidden">
+      <h2>Contact Me</h2>
+      <p>Email: mpruthvisagar@example.com</p>
+      <p>Phone: +91 9550056718</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
